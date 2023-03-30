@@ -16,6 +16,7 @@ function App({ signOut, user }) {
         {user ? (
           <>
             <h3>私は権限を持っています:{user.username}</h3>
+            <button onClick={signOut}>サインアウト</button>
           </>
         ) : (
           <h3>権限がありません</h3> 
